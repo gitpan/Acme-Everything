@@ -11,7 +11,7 @@ DESCRIPTION
     you effectively load all 750,000,000 odd lines of code in CPAN.
 
     Run ANY method in ANY class, and Acme::Everything will download and/or
-    load the module as needed at runtime, including it's recursive
+    load the module as needed at runtime, including its recursive
     installation dependencies, and every class all the way up the @ISA path
     as needed.
 
@@ -26,14 +26,13 @@ DESCRIPTION
 SUPPORT
     Bugs should be reported via the CPAN bug tracker at
 
-      http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme%3A%3AEverything
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme%3A%3AEverything>
 
-    For other issues, contact the author
+    For other issues, or commercial enhancement or support, contact the
+    author.
 
 AUTHORS
-            Adam Kennedy ( maintainer )
-            cpan@ali.as
-            http://ali.as/
+    Adam Kennedy (Maintainer), <http://ali.as/>, cpan@ali.as
 
 SEE ALSO
     Class::Autouse

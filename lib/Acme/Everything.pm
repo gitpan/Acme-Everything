@@ -1,11 +1,12 @@
 package Acme::Everything;
 
-# An _huge_ amount of work went into making sure Class::Autouse handles
+# A _huge_ amount of work went into making sure Class::Autouse handles
 # pretty much every corner case properly, so we'll just hook into it,
 # rather than writing our own autoload code.
+use strict;
 use Class::Autouse ':superloader';
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 # Define our replacement load method
 sub _load {
@@ -48,7 +49,7 @@ Acme::Everything is the ultimate run-time loader. With one 'use' line,
 you effectively load all 750,000,000 odd lines of code in CPAN.
 
 Run ANY method in ANY class, and Acme::Everything will download and/or
-load the module as needed at runtime, including it's recursive installation
+load the module as needed at runtime, including its recursive installation
 dependencies, and every class all the way up the @ISA path as needed.
 
 For all of this, Acme::Everything is implemented in only 13 lines of code,
@@ -61,15 +62,13 @@ method. Calling as a function will not cause the magic to happen.
 
 Bugs should be reported via the CPAN bug tracker at
 
-  http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme%3A%3AEverything
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme%3A%3AEverything>
 
-For other issues, contact the author
+For other issues, or commercial enhancement or support, contact the author.
 
 =head1 AUTHORS
 
-        Adam Kennedy ( maintainer )
-        cpan@ali.as
-        http://ali.as/
+Adam Kennedy (Maintainer), L<http://ali.as/>, cpan@ali.as
 
 =head1 SEE ALSO
 
