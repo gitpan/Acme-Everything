@@ -1,14 +1,18 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Acme-Everything
-version:      0.2
-version_from: lib/Acme/Everything.pm
-installdirs:  site
-requires:
-    Class::Autouse:                1.03
-    CPANPLUS:                      0
-    File::Spec:                    0.83
-    Test::More:                    0
-
+abstract: Effectively loads every class in CPAN
+author: 'Adam Kennedy <cpan@ali.as>'
+build_requires:
+  File::Spec: 0.80
+  Test::More: 0.47
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+generated_by: Module::Install version 0.62
+license: perl
+name: Acme-Everything
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  CPANPLUS: 0
+  Class::AutoUse: 1.03
+  perl: 5.6.0
+version: 1.00

@@ -8,7 +8,7 @@ SYNOPSIS
 
 DESCRIPTION
     Acme::Everything is the ultimate run-time loader. With one 'use' line,
-    you effectively load all 750,000,000 odd lines of code in CPAN.
+    you effectively load all 20,000,000 odd lines of code in CPAN.
 
     Run ANY method in ANY class, and Acme::Everything will download and/or
     load the module as needed at runtime, including its recursive
@@ -26,21 +26,22 @@ DESCRIPTION
 SUPPORT
     Bugs should be reported via the CPAN bug tracker at
 
-    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme%3A%3AEverything>
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme-Everything>
 
     For other issues, or commercial enhancement or support, contact the
     author.
 
 AUTHORS
-    Adam Kennedy (Maintainer), <http://ali.as/>, cpan@ali.as
+    Adam Kennedy <cpan@ali.as>
 
 SEE ALSO
-    Class::Autouse
+    Class::Autouse, CPANPLUS, <http://ali.as/>
 
 COPYRIGHT
-    Copyright (c) 2002-2004 Adam Kennedy. All rights reserved. This program
-    is free software; you can redistribute it and/or modify it under the
-    same terms as Perl itself.
+    Copyright 2002 - 2006 Adam Kennedy. All rights reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
     The full text of the license can be found in the LICENSE file included
     with this module.

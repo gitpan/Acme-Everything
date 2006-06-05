@@ -3,10 +3,11 @@ package Acme::Everything;
 # A _huge_ amount of work went into making sure Class::Autouse handles
 # pretty much every corner case properly, so we'll just hook into it,
 # rather than writing our own autoload code.
+use 5.006;
 use strict;
 use Class::Autouse ':superloader';
 
-our $VERSION = '0.2';
+our $VERSION = '1.00';
 
 # Define our replacement load method
 sub _load {
@@ -45,8 +46,8 @@ Acme::Everything - Effectively loads every class in CPAN
 
 =head1 DESCRIPTION
 
-Acme::Everything is the ultimate run-time loader. With one 'use' line,
-you effectively load all 750,000,000 odd lines of code in CPAN.
+B<Acme::Everything> is the ultimate run-time loader. With one 'use' line,
+you effectively load all 20,000,000 odd lines of code in CPAN.
 
 Run ANY method in ANY class, and Acme::Everything will download and/or
 load the module as needed at runtime, including its recursive installation
@@ -62,21 +63,22 @@ method. Calling as a function will not cause the magic to happen.
 
 Bugs should be reported via the CPAN bug tracker at
 
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme%3A%3AEverything>
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme-Everything>
 
 For other issues, or commercial enhancement or support, contact the author.
 
 =head1 AUTHORS
 
-Adam Kennedy (Maintainer), L<http://ali.as/>, cpan@ali.as
+Adam Kennedy E<lt>cpan@ali.asE<gt>
 
 =head1 SEE ALSO
 
-L<Class::Autouse>
+L<Class::Autouse>, L<CPANPLUS>, L<http://ali.as/>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2002-2004 Adam Kennedy. All rights reserved.
+Copyright 2002 - 2006 Adam Kennedy. All rights reserved.
+
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
 
